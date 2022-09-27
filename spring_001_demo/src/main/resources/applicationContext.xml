@@ -8,5 +8,8 @@
         启动容器的同时创建对象
         -->
 
-        <bean id = "stu" class = "org.example.pojo.Student"></bean>
+        <bean id = "stu" class = "org.example.pojo.Student">
+                <property name="name" value = "qzd"></property>
+                <property name="age" value = "18"></property>
+        </bean>
 </beans>

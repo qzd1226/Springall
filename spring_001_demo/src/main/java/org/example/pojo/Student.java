@@ -12,6 +12,14 @@ public class Student {
                 '}';
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public Student(){
         System.out.println("学生的无参构造方法");
     }
