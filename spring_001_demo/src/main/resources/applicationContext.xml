@@ -6,6 +6,7 @@
         id: 就是创建的对象的名称
         class: 就是创建对象的类型,底层通过反射构建对象
         启动容器的同时创建对象
+        对象必须要有无参的构造方法
         -->
 
         <bean id = "stu" class = "org.example.pojo.Student">

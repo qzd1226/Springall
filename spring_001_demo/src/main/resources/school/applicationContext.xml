@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!--创建学校的对象-->
+
+        <bean id = "school" class = "org.example.pojo2.School">
+                <property name="name" value = "WU"></property>
+                <property name="addr" value = "US"></property>
+        </bean>
+
+        <!--创建学生的对象 这里ref 可以引用这个xml中之前已经创建的对象
+        -->
+        <bean id = "stu" class="org.example.pojo2.Student">
+                <property name="name" value = "qzd"></property>
+                <property name="age" value = "19"></property>
+                <property name="school" ref ="school"></property>
+
+
+        </bean>
+
+</beans>
