@@ -19,4 +19,11 @@ public class MyTest {
         s02.Student stu = (s02.Student)ac.getBean("student");
         System.out.println(stu);
     }
+
+    @Test
+    public void test03(){
+        ApplicationContext ac = new ClassPathXmlApplicationContext("s03/applicationContext.xml");
+        s03.Student stu = (s03.Student)ac.getBean("student");
+        System.out.println(stu);
+    }
 }
