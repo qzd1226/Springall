@@ -3,7 +3,7 @@ package s03;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component("school")
+@Component("superSchool")
 public class School { // 此时School 创建的对象的名称是school
     @Value("WU")
     private String name;

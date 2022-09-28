@@ -3,7 +3,7 @@ package s03;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("school")
 public class SubSchool extends School{
     @Value("清华附小")
     private  String name;
