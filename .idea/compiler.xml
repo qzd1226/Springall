@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_001_demo" />
+        <module name="spring_002_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring_001_demo" target="1.8" />
+      <module name="spring_002_demo" target="1.8" />
+      <module name="spring_002_trilayer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
