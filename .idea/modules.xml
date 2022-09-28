@@ -5,8 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/spring_001_demo/spring_001_demo.iml" filepath="$PROJECT_DIR$/spring_001_demo/spring_001_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_002_trilayer/spring_002_demo.iml" filepath="$PROJECT_DIR$/spring_002_trilayer/spring_002_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_002_trilayer_spring/spring_002_trilayer_spring.iml" filepath="$PROJECT_DIR$/spring_002_trilayer_spring/spring_002_trilayer_spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring_002_trilayer_spring_annotationn/spring_002_trilayer_spring_annotation.iml" filepath="$PROJECT_DIR$/spring_002_trilayer_spring_annotationn/spring_002_trilayer_spring_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_002_trilayer_spring_annotation/spring_002_trilayer_spring_annotation.iml" filepath="$PROJECT_DIR$/spring_002_trilayer_spring_annotation/spring_002_trilayer_spring_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_003_annotation/spring_003_annotation.iml" filepath="$PROJECT_DIR$/spring_003_annotation/spring_003_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_004_aop/spring_004_aop.iml" filepath="$PROJECT_DIR$/spring_004_aop/spring_004_aop.iml" />
     </modules>
   </component>
 </project>

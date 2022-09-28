@@ -10,6 +10,7 @@
         <module name="spring_003_annotation" />
         <module name="spring_002_trilayer_spring_annotation" />
         <module name="spring_001_demo" />
+        <module name="spring_004_aop" />
         <module name="spring_002_demo" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="spring_002_trilayer_spring" target="1.8" />
       <module name="spring_002_trilayer_spring_annotation" target="1.8" />
       <module name="spring_003_annotation" target="1.8" />
+      <module name="spring_004_aop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
