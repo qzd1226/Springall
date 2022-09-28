@@ -1,6 +1,7 @@
 package s02;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +12,7 @@ public class Student {
     @Value("19")
     private  int age;
     @Autowired
+    @Qualifier("school") //按名称注入
     //会自动从spring bean 工厂中找到school 对象
     private School school;
 

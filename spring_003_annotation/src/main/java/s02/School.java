@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class School {
+public class School { // 此时School 创建的对象的名称是school
     @Value("WU")
     private String name;
     @Value("US")
