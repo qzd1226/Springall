@@ -12,4 +12,11 @@ public class MyTest {
         Student stu = (Student) ac.getBean("student"); //创建的对象默认名称是雷鸣的驼峰命名法，也可以指定对象的名称
         System.out.println(stu);
     }
+
+    @Test
+    public void test02(){
+        ApplicationContext ac = new ClassPathXmlApplicationContext("s02/applicationContext.xml");
+        s02.Student stu = (s02.Student)ac.getBean("student");
+        System.out.println(stu);
+    }
 }
