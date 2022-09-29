@@ -27,6 +27,10 @@ public class MyAspect {
     public void myBefore(){
         System.out.println("前置通知执行.......");
     }
+    @Before(value = "execution(* com.s04.*.*(..))")
+    public void myBefore2(){
+        System.out.println("前置通知2执行.......");
+    }
 
     @AfterReturning(value = "execution(* com.s04.*.*(..))", returning = "obj")
     public void myAfterReturning(Object obj){
