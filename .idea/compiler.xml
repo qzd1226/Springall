@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring_002_trilayer_spring" />
         <module name="spring_003_annotation" />
+        <module name="spring_004_aop" />
+        <module name="spring_005_aspectj" />
+        <module name="spring_002_demo" />
         <module name="spring_002_trilayer_spring_annotation" />
         <module name="spring_001_demo" />
-        <module name="spring_004_aop" />
-        <module name="spring_002_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="spring_002_trilayer_spring_annotation" target="1.8" />
       <module name="spring_003_annotation" target="1.8" />
       <module name="spring_004_aop" target="1.8" />
+      <module name="spring_005_aspectj" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
