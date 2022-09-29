@@ -3,6 +3,8 @@ import com.proxy2.SubBookServiceImpl;
 import com.proxy3.Agent;
 import com.proxy3.Service;
 import com.proxy4.LogAop;
+import com.proxy5.ProxyFactory;
+import com.proxy5.TrabsAop;
 import org.junit.Test;
 
 public class MyTest {
@@ -28,5 +30,14 @@ public class MyTest {
         System.out.println("------------------------------");
         com.proxy4.Service agent2 = new com.proxy4.Agent(new com.proxy4.LogAop(), new com.proxy4.ProductServiceImpl());
         agent2.buy();
+    }
+    @Test
+    // work with proxy5
+    public void test05(){
+        com.proxy5.Service agent = (com.proxy5.Service) ProxyFactory.getAgent(new com.proxy5.BookServiceImpl(),new TrabsAop());
+        agent.buy();
+        agent.show(18);
+
+
     }
 }
