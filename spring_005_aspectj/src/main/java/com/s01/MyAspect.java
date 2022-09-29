@@ -16,9 +16,10 @@ public class MyAspect {
     // 5)必须使用@Before注解来声明切入的时机和切入点
     // 6)注解的参数：value  指定切入点表达式
     // 业务方法 public String doSome(String name, int age) (被切入的方法)
-    @Before(value = "execution(public String com.s01.SomeServicesImpl.doSome(String ,int))")
+    @Before(value = "execution(public * com.s01.SomeServicesImpl.*(..))")
     public void myBefore(){
         System.out.println("切面方法中的前置功能实现");
     }
+
 }
 

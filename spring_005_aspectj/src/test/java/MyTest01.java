@@ -12,5 +12,6 @@ public class MyTest01 {
         System.out.println(someServices.getClass());
         String s = someServices.doSome("张三",22);
         System.out.println(s);
+        someServices.show();
     }
 }

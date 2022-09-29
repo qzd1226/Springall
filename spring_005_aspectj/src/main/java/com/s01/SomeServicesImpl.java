@@ -6,4 +6,8 @@ public class SomeServicesImpl implements SomeServices{
         System.out.println("doSome 的业务功能实现");
         return "abcd";
     }
+    @Override
+    public void show(){
+        System.out.println("show的方法被执行........");
+    }
 }
