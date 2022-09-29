@@ -1,8 +1,11 @@
 package com.s01;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
 
 // 此类为切面类， 包含各种切面方法
 @Aspect // 交给AspectJ的框架去识别切面类
@@ -19,8 +22,10 @@ public class MyAspect {
     // 6)注解的参数：value  指定切入点表达式
     // 业务方法 public String doSome(String name, int age) (被切入的方法)
     @Before(value = "execution(public * com.s01.SomeServicesImpl.*(..))")
-    public void myBefore(){
+    public void myBefore(JoinPoint jp){
         System.out.println("切面方法中的前置功能实现");
+        System.out.println("目标方法的签名:" + jp.getSignature());
+        System.out.println("目标方法的参数:" + Arrays.toString(jp.getArgs()));
     }
 
 }
