@@ -1,7 +1,7 @@
 package com.s04;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -22,4 +22,23 @@ public class MyAspect {
     public void myAfter(){
         System.out.println("最终通知.......");
     }
+
+    @Before(value = "execution(* com.s04.*.*(..))")
+    public void myBefore(){
+        System.out.println("前置通知执行.......");
+    }
+
+    @AfterReturning(value = "execution(* com.s04.*.*(..))", returning = "obj")
+    public void myAfterReturning(Object obj){
+        System.out.println("后置通知执行.......");
+    }
+
+    @Around(value = "execution(* com.s04.*.*(..))")
+    public Object myAround(ProceedingJoinPoint pjp) throws Throwable {
+        System.out.println("环绕通知的前置通知执行.......");
+        Object obj = pjp.proceed(pjp.getArgs());
+        System.out.println("环绕通知的后置通知执行.......");
+        return obj;
+    }
+
 }
