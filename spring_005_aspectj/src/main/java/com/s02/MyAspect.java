@@ -17,6 +17,12 @@ public class MyAspect {
     @AfterReturning(value = "execution(* com.s02.*.*(..))", returning = "obj")
     public void myAfter(Object obj){
         System.out.println("后置通知功能实现");
+        if(obj != null){
+            if(obj instanceof String){
+                obj = obj.toString().toUpperCase();
+                System.out.println("在切面方法中目标方法的返回值" + obj);
+            }
+        }
     }
 
 }
