@@ -8,7 +8,7 @@ public class MyTest01 {
     public void test01(){
         ApplicationContext ac = new ClassPathXmlApplicationContext("s01/applicationContext.xml");
         //取出代理对象
-        SomeServices someServices = (SomeServices) ac.getBean("someService");
+        SomeServices someServices = (SomeServices) ac.getBean("someServicesImpl");
         System.out.println(someServices.getClass());
         String s = someServices.doSome("张三",22);
         System.out.println(s);

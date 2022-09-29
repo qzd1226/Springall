@@ -2,9 +2,11 @@ package com.s01;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
 
 // 此类为切面类， 包含各种切面方法
 @Aspect // 交给AspectJ的框架去识别切面类
+@Component
 public class MyAspect {
     //所有切面的功能都是由切面方法来实现的
     // 可以讲各种切面都在此类中进行开发

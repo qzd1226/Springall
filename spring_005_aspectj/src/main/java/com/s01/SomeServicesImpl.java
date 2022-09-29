@@ -1,5 +1,9 @@
 package com.s01;
+
+import org.springframework.stereotype.Service;
+
 // 业务实现类
+@Service
 public class SomeServicesImpl implements SomeServices{
     @Override
     public String doSome(String name, int age) {
