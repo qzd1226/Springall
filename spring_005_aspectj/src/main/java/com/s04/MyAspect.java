@@ -18,31 +18,34 @@ public class MyAspect {
      *  参数:
      *      value:切入点表达式
      */
-    @After(value = "execution(* com.s04.*.*(..))")
+    @After(value = "mycut()")
     public void myAfter(){
         System.out.println("最终通知.......");
     }
 
-    @Before(value = "execution(* com.s04.*.*(..))")
+    @Before(value = "mycut()")
     public void myBefore(){
         System.out.println("前置通知执行.......");
     }
-    @Before(value = "execution(* com.s04.*.*(..))")
+    @Before(value = "mycut()")
     public void myBefore2(){
         System.out.println("前置通知2执行.......");
     }
 
-    @AfterReturning(value = "execution(* com.s04.*.*(..))", returning = "obj")
+    @AfterReturning(value = "mycut()", returning = "obj")
     public void myAfterReturning(Object obj){
         System.out.println("后置通知执行.......");
     }
 
-    @Around(value = "execution(* com.s04.*.*(..))")
+    @Around(value = "mycut()")
     public Object myAround(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("环绕通知的前置通知执行.......");
         Object obj = pjp.proceed(pjp.getArgs());
         System.out.println("环绕通知的后置通知执行.......");
         return obj;
     }
+    @Pointcut(value = "execution(* com.s04.*.*(..))")
+    public void mycut(){
 
+    }
 }
