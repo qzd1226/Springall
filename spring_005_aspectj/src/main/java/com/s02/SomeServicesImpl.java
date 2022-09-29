@@ -16,4 +16,9 @@ public class SomeServicesImpl implements SomeServices{
         System.out.println("执行show方法");
         return 0;
     }
+    @Override
+    public  Student change(){
+        System.out.println("change方法被执行");
+        return new Student("qzd", 19);
+    }
 }

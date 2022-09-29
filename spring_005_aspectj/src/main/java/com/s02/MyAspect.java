@@ -22,6 +22,12 @@ public class MyAspect {
                 obj = obj.toString().toUpperCase();
                 System.out.println("在切面方法中目标方法的返回值" + obj);
             }
+            if(obj instanceof  Student){
+                Student stu = (Student) obj;
+                stu.setName("李四");
+                stu.setAge(22);
+                System.out.println("在切面中修改为：" + stu.toString());
+            }
         }
     }
 
