@@ -7,6 +7,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import pojo.User;
 
+import java.util.List;
+
 //指定当前测试类在spring的测试环境中执行,此时就可以通过注入的方式直接获取IOC容器中的bean
 @RunWith(SpringJUnit4ClassRunner.class)
 //设置当前spring测试环境的配置文件
@@ -26,5 +28,11 @@ public class JdbcTemplateTest {
         String sql = "select * from users where userid = ?";
         User user = jdbcTemplate.queryForObject(sql,new BeanPropertyRowMapper<>(User.class),1);
         System.out.println(user);
+    }
+    @Test
+    public void getAllUser(){
+        String sql = "select * from users";
+        List<User> list = jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(User.class));
+        list.forEach(System.out::println);
     }
 }
