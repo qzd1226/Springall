@@ -35,4 +35,10 @@ public class JdbcTemplateTest {
         List<User> list = jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(User.class));
         list.forEach(System.out::println);
     }
+    @Test
+    public void getCounnt(){
+        String sql = "select count(*) from users";
+        Integer count = jdbcTemplate.queryForObject(sql, Integer.class);
+        System.out.println(count);
+    }
 }
