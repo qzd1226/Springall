@@ -11,6 +11,7 @@
         <module name="spring_004_aop" />
         <module name="spring_005_aspectj" />
         <module name="spring_002_demo" />
+        <module name="spring_006_sm" />
         <module name="spring_002_trilayer_spring_annotation" />
         <module name="spring_001_demo" />
       </profile>
@@ -24,6 +25,8 @@
       <module name="spring_003_annotation" target="1.8" />
       <module name="spring_004_aop" target="1.8" />
       <module name="spring_005_aspectj" target="1.7" />
+      <module name="spring_006_jdbc" target="1.8" />
+      <module name="spring_006_sm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

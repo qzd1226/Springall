@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/spring_004_aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring_002_trilayer_spring_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring_005_aspectj/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_006_sm/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_006_jdbc/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

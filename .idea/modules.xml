@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_003_annotation/spring_003_annotation.iml" filepath="$PROJECT_DIR$/spring_003_annotation/spring_003_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_004_aop/spring_004_aop.iml" filepath="$PROJECT_DIR$/spring_004_aop/spring_004_aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_005_aspectj/spring_005_aspectj.iml" filepath="$PROJECT_DIR$/spring_005_aspectj/spring_005_aspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_006_jdbc/spring_006_sm.iml" filepath="$PROJECT_DIR$/spring_006_jdbc/spring_006_sm.iml" />
     </modules>
   </component>
 </project>
